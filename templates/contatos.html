@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contatos</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
 </head>
-<body> 
+
+<body background="../static/imagens/fundo2.png">
+
 
     <header>
-        <nav class="top-menu">
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li class="separator">|</li>
-                <li><a href="/quemsomos.html">Quem Somos</a></li>
-                <li class="separator">|</li>
-                <li><a href="/contatos.html">Contatos</a></li>
-            </ul>
+        <img src="../static/imagens/logo.png" alt="logo">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/quemsomos">Quem Somos</a>
+            <a href="/contatos">Contatos</a>
         </nav>
     </header>
-
-    <div><img src="{{ url_for('static', filename='logo.png') }}" alt="logo">
-    </div>
-    
-
-    <p><h3>Entre em contato</h3></p>
+    <p>
+    <h3>Entre em contato</h3>
+    </p>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nils.</p>
     <hr>
@@ -34,29 +31,18 @@
     <div><input type="assunto" id="assunto" name="assunto"></div>
     <label for="descriçaõ">Descrição:</label>
     <div><textarea rows="4" id="descrição" name="descrição"></textarea></div>
-    
+
     <div>
         <button type="submit">Enviar</button>
     </div>
     <footer>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <h4>  <p class="centered-text">Todos os direitos reservados</p>  </h4>
-  
-      </footer>
-    
+        <h4>
+            <p class="centered-text">Todos os direitos reservados</p>
+        </h4>
+
+    </footer>
+
 
 </body>
+
 </html>
