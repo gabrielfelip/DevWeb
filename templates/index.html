@@ -6,23 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
     <title>home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="../static/imagens/logo.png">
 </head>
 
-<body background="../static/imagens/fundo.png">
+<body>
+    <div class="top-margin">
     <header>
-        <img src="../static/imagens/logo.png" alt="logo">
-        <nav>
+        <h1 class="centered-text">Friendly Concert</h1>
+        <div class="logo-container">
+        <img src="../static/imagens/logo.png" alt="logo" style="width: 95px; height: 95px;">
+        </div>
+
+        <nav class="nav-right">
+
             <a href="/">Home</a>
             <a href="/quemsomos">Quem Somos</a>
             <a href="/contatos">Contatos</a>
         </nav>
+    </div>
+
     </header>
-    <style>
+    <div class="flex-container">
+        <div id="carouselcontainer" class="mx-auto" style="max-width: 60%; height: 400px; padding-bottom: 40px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/imagens/lollapalooza.jpg" alt="lolla" style="width: 100%; height: 400px;">
+                    <div class="carousel-caption">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/imagens/RiR.jpg" alt="rock in rio" style="width: 100%; height: 400px;">
+                    <div class="carousel-caption">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/imagens/iwb.jpg" alt="i wanna be" style="width: 100%; height: 400px;">
+                    <div class="carousel-caption">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/imagens/taylor.png" alt="taylor" style="width: 100%; height: 400px;">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/imagens/gpweekh.jpg" alt="halsey" style="width: 100%; height: 400px;">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/imagens/gpweek2.jpg" alt="kendrick" style="width: 100%; height: 400px;">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
 
-    </style>
+            </div>
+            
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+    
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#myCarousel').carousel({
+                interval: False 
+            });
+        });
+    </script>
 
-    <img src="../static/imagens/capa.png" alt="capa" class="banner">
+   
 
     <h2>Sobre a universidade</h2>
 
