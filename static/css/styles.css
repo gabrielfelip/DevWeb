@@ -1,7 +1,8 @@
 body{
-  margin: auto;
-  width: 1000px;
-  position: relative;
+  margin: 0;
+background-color: rgb(13, 233, 148); 
+ position: 0;
+  text-align: center;
   
 }
 
@@ -22,7 +23,31 @@ header{
   background-size: 100%;
   width: 1000px;
   height: 412px;
-}  
+}    
 
+.top-margin {
+  margin-top: 0; /* Define a margem de 5 centímetros no topo */
+  background-color: #16daa9; /* Define a cor de fundo desejada */
+  height: 100px; /* Defina a altura como 0 para evitar que a margem afete o layout */
+}
+
+.logo-container {
+  margin-top: -90px; /* Ajuste a margem superior conforme necessário */
+  text-align: left; /* Centralize o logotipo horizontalmente */
+  padding-left: 10px;
+}
+
+/* Estilo para as barras de navegação no canto superior direito */
+.nav-right {
+  margin-top: -28px; /* Alinhe as barras de navegação à direita */
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+/* Estilo para centralizar o carrossel */
+#myCarousel {
+  margin: 50px;
+}
 
 
