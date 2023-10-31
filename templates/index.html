@@ -6,24 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
     <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="../static/imagens/logo.png">
 </head>
 
-<body>
-    <div class="top-margin">
-    <header>
-        <h1 class="centered-text">Friendly Concert</h1>
-        <div class="logo-container">
-        <img src="../static/imagens/logo.png" alt="logo" style="width: 95px; height: 95px;">
+<body class="page-background">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="../static/imagens/logo.png" alt="Logo"
+                    style="width: 30px; height: 30px;">
+                EchoFriends</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suas conexões</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
         </div>
+    </nav>
+    </div>
 
-        <nav class="nav-right">
-
-            <a href="/">Home</a>
-            <a href="/quemsomos">Quem Somos</a>
-            <a href="/contatos">Contatos</a>
-        </nav>
+    <div class="welcome-message">
+        <h2>Aqui, em EchoFriends a música é o idioma universal da amizade.</h2>
     </div>
 
     </header>
@@ -81,10 +96,12 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
             </ol>
         </div>
     </div>
-    
     
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -99,34 +116,51 @@
         });
     </script>
 
-   
 
-    <h2>Sobre a universidade</h2>
+        <div class="container-titulo">
+            <h2>Acontece em São Paulo <i class="fas fa-arrow-down"></i></h2>
+        </div>
 
-    <p>Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipisicing elit. Beatae voluptatibus eum
-        dolor ipsam illo possimus debitis maiores. Itaque modi ab eveniet odit totam cum,
-        assumenda, molestias aliquam labore velit explicabo incidunt, qui omnis minima placeat
-        vel alias doloribus nesciunt est consectetur tempora. Sit iste natus minus, non dicta
-        ipsam, magnam optio quasi quis, quaerat assumenda? Distinctio cumque numquam impedit
-        dolor saepe quia minus. Aspernatur harum error natus dignissimos facilis, nisi
-        blanditiis quasi pariatur libero minima, itaque rem neque, reiciendis consequuntur
-        fugiat? </p>
-    <p>Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipisicing elit. Beatae voluptatibus eum
-        dolor ipsam illo possimus debitis maiores. Itaque modi ab eveniet odit totam cum,
-        assumenda, molestias aliquam labore velit explicabo incidunt, qui omnis minima placeat
-        vel alias doloribus nesciunt est consectetur tempora. Sit iste natus minus, non dicta
-        ipsam, magnam optio quasi quis, quaerat assumenda? Distinctio cumque numquam impedit
-        dolor saepe quia minus. Aspernatur harum error natus dignissimos facilis, nisi
-        blanditiis quasi pariatur libero minima, itaque rem neque, reiciendis consequuntur
-        fugiat? </p>
+        <div class="container-imagens">
+            <img src="../static/imagens/jão.png" alt="jão">
+            <img src="../static/imagens/iwbcard.jpg" alt="iwb">
+            <img src="../static/imagens/rbd.jpg" alt="rbd">
+            <img src="../static/imagens/rhcp.png" alt="rhcp">
+            <img src="../static/imagens/paul.jpg" alt="paul">
+            <img src="../static/imagens/alanis.png" alt="alanis">
+            <img src="../static/imagens/roger.jpg" alt="roger">
+            <img src="../static/imagens/gpcard.png" alt="gpweekcard">
 
-    <footer>
+        </div>
 
-        <h4>
-            <p class="centered-text">Todos os direitos reservados</p>
-        </h4>
 
-    </footer>
+        <div class="txt-home">
+
+            <h3>Conexões Musicais Sem Fronteiras</h3>
+
+            <p>Em EchoFriends, nossa missão é aproximar pessoas com uma paixão comum: a música. Independentemente de
+                você
+                ser um entusiasta do rock, um amante do pop ou um aficionado pelo indie, nosso site oferece uma
+                plataforma
+                única para criar conexões musicais significativas. E o melhor de tudo, não importa se você é músico, fã
+                ou
+                apenas alguém que quer compartilhar sua playlist favorita.</p>
+
+            <p>Aqui, a música é o elo comum. Encontre pessoas que compartilham seus gostos musicais e interesses, faça
+                novos
+                amigos e expanda sua rede social. Seja para descobrir novas músicas, formar uma banda ou simplesmente
+                compartilhar histórias e experiências musicais. Seja qual for o seu interesse, em EchoFriends você encontrará um lar
+                acolhedor entre amigos que entendem e compartilham da mesma paixão.</p>
+
+        </div>
+
+        <footer>
+
+            <h4>
+                <p class="centered-text">Todos os direitos reservados</p>
+            </h4>
+
+        </footer>
 </body>
 
 
