@@ -55,7 +55,8 @@ header{
 
 /* Estilo para centralizar o carrossel */
 #myCarousel {
-  margin: 50px;
+  margin: 20px;
+  padding-top: 15px;
 }
 
 
@@ -87,7 +88,7 @@ header{
   color: #fff; /* Cor do texto */
   text-align: center; /* Centraliza o texto horizontalmente */
   padding: 20px; /* Espaçamento interno */
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .txt-home{
