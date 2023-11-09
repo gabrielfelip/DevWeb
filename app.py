@@ -10,7 +10,10 @@ def home():
 def quemsomos():
     return render_template("quemsomos.html")
 
-@app.route("/contatos")
+@app.route("/minhasconexoes")
 def contatos():
-    return render_template("contatos.html")
+    return render_template("minhasconexoes.html")
 
+@app.route("/login")
+def login():
+    return render_template("login.html")
