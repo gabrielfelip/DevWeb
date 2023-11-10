@@ -3,26 +3,6 @@
 }
 
 
-
-body{
-background-color: rgb(13, 233, 148); 
- position: 0;
-  text-align: center;
-background-color: rgb(106, 143, 129); 
-position: 0;
-text-align: center;
-  
-}
-
-header{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 22px;
-  background-color: #07b4c0;
-}
-
 .centered-text {
       text-align: center; 
      }
@@ -34,23 +14,13 @@ header{
   height: 412px;
 }    
 
-.top-margin {
-  margin-top: 0; /* Define a margem de 5 centímetros no topo */
-  background-color: #16daa9; /* Define a cor de fundo desejada */
-  height: 100px; /* Defina a altura como 0 para evitar que a margem afete o layout */
-}
-
 .logo-container {
   margin-top: -90px; /* Ajuste a margem superior conforme necessário */
   text-align: left; /* Centralize o logotipo horizontalmente */
   padding-left: 10px;
 }
-/* Estilo para as barras de navegação no canto superior direito */
-.nav-right {
-  margin-top: -28px; /* Alinhe as barras de navegação à direita */
-  text-align: right;
-  padding-right: 10px;
-}
+
+
 
 
 /* Estilo para centralizar o carrossel */
@@ -99,6 +69,79 @@ header{
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 16%;
+  padding-left: 12%;
 }
 
+.connections-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.connection-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.connection-card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.connection-info {
+  padding: 15px;
+}
+
+.connection-info h3 {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.recent-activities {
+  padding: 15px;
+}
+
+.recent-activities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-activities li {
+  margin-bottom: 5px;
+}
+
+.connection-image {
+  width: 80px; /* ajuste o tamanho conforme necessário */
+  height: 80px; /* ajuste o tamanho conforme necessário */
+  border-radius: 50%; /* para criar um avatar circular */
+  background-color: #525050; /* cor de fundo para simular a imagem de perfil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* para garantir que a borda redonda seja aplicada corretamente */
+}
+
+.connection-image img {
+  
+  border-radius: 50%; /* imagem circular */
+}
