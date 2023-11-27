@@ -1,6 +1,14 @@
-from flask import Flask, render_template
+import mysql.connector
 
 app = Flask("__name__")
+
+db = mysql.connector.connect(
+host = 'localhost',
+user = 'root',
+password = 'INSERIR_SENHA',
+database = 'desafio04'
+)
+
 
 @app.route("/")
 def home():
@@ -14,6 +22,31 @@ def quemsomos():
 def contatos():
     return render_template("minhasconexoes.html")
 
-@app.route("/login")
+
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template("login.html")
+    if request.method == 'POST':
+        email = request.form['email']
+        senha = request.form['senha']
+
+        cur = db.cursor(buffered=True)
+        cur.execute('INSERT INTO LOGIN (EMAIL, SENHA) VALUES  (%,%,%)', (email, senha))
+
+        db.commit()
+
+        cur.close()
+
+        return 'Sucesso'
+    
+     return render_template("login.html")
+
+
+@app.route('/users')
+def users():
+    cur = db.cursor(buffered=True)
+
+    users = cur.execute("select * from login")
+
+    userDetails = cur.fetchall()
+
+    return render_template("users.html", userDetails=userDetails)
