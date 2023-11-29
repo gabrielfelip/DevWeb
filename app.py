@@ -1,4 +1,6 @@
+from flask import Flask, render_template, request
 import mysql.connector
+from flask_mysqldb import MySQL
 
 app = Flask("__name__")
 
@@ -8,6 +10,8 @@ user = 'root',
 password = 'INSERIR_SENHA',
 database = 'desafio04'
 )
+
+db = MySQL(app)
 
 
 @app.route("/")
